@@ -1,0 +1,4 @@
+name: DeathNote
+version: '${project.version}'
+main: net.kunmc.lab.deathnote.DeathNote
+api-version: 1.16
