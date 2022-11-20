@@ -2,3 +2,9 @@ name: DeathNote
 version: '${project.version}'
 main: net.kunmc.lab.deathnote.DeathNote
 api-version: 1.16
+commands:
+  bn:
+    permission: BN
+permissions:
+  BN:
+    default: op
