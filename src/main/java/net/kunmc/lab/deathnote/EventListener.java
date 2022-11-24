@@ -26,7 +26,7 @@ public class EventListener implements Listener{
                         public void run() {
                             player.banPlayer(writer.getName()+"のノートの力であなたはBANされた...");
                             Bukkit.getOnlinePlayers().forEach(p -> {
-                                p.sendMessage(ChatColor.RED + (player + "はノートの力で世界からBANされた..."));
+                                p.sendMessage(ChatColor.RED + (player.getName() + "はノートの力で世界からBANされた..."));
                             });
                         }
                     }.runTaskLater(DeathNote.INSTANCE,100);
@@ -37,7 +37,7 @@ public class EventListener implements Listener{
                         public void run() {
                             writer.banPlayer("あなたは間違った名前を記入したためBANされた...");
                             Bukkit.getOnlinePlayers().forEach(p -> {
-                                p.sendMessage(ChatColor.RED + (writer + "(ルールの読めない敗北者)は名前の記入を失敗したためこの世界からBANされた..."));
+                                p.sendMessage(ChatColor.RED + (writer.getName() + "(ルールの読めない敗北者)は名前の記入を失敗したためこの世界からBANされた..."));
                             });
                         }
                     }.runTaskLater(DeathNote.INSTANCE,100);
