@@ -18,7 +18,7 @@ public class Book {
         pages.add("-----BanNote-----\n\n" +
                 "1.BANしたい人物の正確なMCIDを、署名⇒本のタイトル欄に記入するとBANできます。\n\n" +
                 "2.名前をもし間違って記入するとあなたがBANされます。\n\n" +
-                "3.このノートを一度でも使った人間はその代償として、天国にも地獄にも行けない。");
+                "3.このノートを一度でも使った人間はその代償として天国にも地獄にも行けない。");
         bookmeta.setPages(pages);
         bookmeta.setDisplayName(ChatColor.DARK_RED+"BanNote");
         bookmeta.setGeneration(BookMeta.Generation.COPY_OF_COPY);
