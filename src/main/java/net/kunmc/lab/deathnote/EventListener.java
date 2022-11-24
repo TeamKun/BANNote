@@ -20,7 +20,7 @@ public class EventListener implements Listener{
             String name = e.getNewBookMeta().getTitle();
             Player player = Bukkit.getPlayer(Objects.requireNonNull(name));
                 if(player != null){
-                    writer.sendMessage(ChatColor.DARK_RED + (player + "は5秒後にBANされます..."));
+                    writer.sendMessage(ChatColor.RED + (player + "は5秒後にBANされます..."));
                     new BukkitRunnable(){
                         @Override
                         public void run() {
@@ -31,7 +31,7 @@ public class EventListener implements Listener{
                         }
                     }.runTaskLater(DeathNote.INSTANCE,100);
                 }else{
-                    writer.sendMessage(ChatColor.DARK_RED + "あなたは名前の記入を失敗したため5秒後にこの世界からBANされます...");
+                    writer.sendMessage(ChatColor.RED + "あなたは名前の記入を失敗したため5秒後にこの世界からBANされます...");
                     new BukkitRunnable(){
                         @Override
                         public void run() {

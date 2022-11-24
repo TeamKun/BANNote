@@ -54,7 +54,7 @@ public class Commnads implements CommandExecutor, TabCompleter {
                             Random random = new Random();
                             Player player = players.get(random.nextInt(players.size()));
                             player.getLocation().getWorld().dropItem(player.getLocation(), Book.deathNote());
-                            player.sendMessage(net.md_5.bungee.api.ChatColor.DARK_RED + "あなたにBANノートが与えられました...");
+                            player.sendMessage(net.md_5.bungee.api.ChatColor.RED + "あなたにBANノートが与えられました...");
                             Bukkit.getLogger().info(net.md_5.bungee.api.ChatColor.GREEN + (player + "にノートを与えました@r"));
                             for (Player p : Bukkit.getOnlinePlayers()) {
                                 p.sendMessage(net.md_5.bungee.api.ChatColor.GOLD + "この世にBANNoteが現れました...");
@@ -62,7 +62,7 @@ public class Commnads implements CommandExecutor, TabCompleter {
                         } else if (args[1].equals("@a")) {
                             for (Player player : Bukkit.getOnlinePlayers()) {
                                 player.getLocation().getWorld().dropItem(player.getLocation(), Book.deathNote());
-                                player.sendMessage(net.md_5.bungee.api.ChatColor.DARK_RED + "あなたにBANノートが与えられました...");
+                                player.sendMessage(net.md_5.bungee.api.ChatColor.RED + "あなたにBANノートが与えられました...");
                                 player.sendMessage(net.md_5.bungee.api.ChatColor.GOLD + "この世にBANNoteが現れました...");
                             }
                             Bukkit.getLogger().info(net.md_5.bungee.api.ChatColor.GREEN + "全員にノートを与えました@a");
@@ -70,7 +70,7 @@ public class Commnads implements CommandExecutor, TabCompleter {
                             Player player = Bukkit.getPlayer(args[1]);
                             if (player != null) {
                                 player.getLocation().getWorld().dropItem(player.getLocation(), Book.deathNote());
-                                player.sendMessage(net.md_5.bungee.api.ChatColor.DARK_RED + "あなたにBANノートが与えられました...");
+                                player.sendMessage(net.md_5.bungee.api.ChatColor.RED + "あなたにBANノートが与えられました...");
                                 Bukkit.getLogger().info(net.md_5.bungee.api.ChatColor.GREEN + (player + "にノートを与えました"));
                                 for (Player p : Bukkit.getOnlinePlayers()) {
                                     p.sendMessage(net.md_5.bungee.api.ChatColor.GOLD + "この世にBANNoteが現れました...");
